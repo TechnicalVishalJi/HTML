@@ -1,0 +1,64 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<title>box</title>
+	<style type="text/css" media="all">
+		* {
+			margin: 0;
+			padding: 0;
+			background-color: black;
+		}
+		
+		div {
+			position: relative;
+			top: 20px;
+			left: 20px;
+			height: 50px;
+			width: 50px;
+			background-color: white;
+			animation-name: box;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+		}
+		
+		@keyframes box {
+			0%  {
+				top: 20px;
+				left: 20px;
+				background-color: red;
+				border-radius: 50% 50% 50% 50%;
+			}
+			25% {
+				left: 250px;
+				top: 20px;
+				background-color: cyan;
+				border-radius: 50% 0 0 0;
+			}
+			50% {
+				top: 250px;
+				left: 250px;
+				background-color: yellow;
+				border-radius: 50% 50% 0 0;
+			}
+			75% {
+				left: 20px;
+				top: 250px;
+				background-color: orange;
+				border-radius: 50% 50% 50% 0;
+			}
+			100%{
+				top: 20px;
+				left: 20px;
+				background-color: red;
+				border-radius: 50% 50% 50% 50%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="div">
+		
+	</div>
+</body>
+</html>
